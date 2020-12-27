@@ -36,9 +36,8 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: 1;
-    /* padding: 0 50px; */
 }
-/* MAIN STYLE */
+/* LOGO STYLE */
 .logo-container {
     grid-row: 1;
     grid-column: 1;
@@ -55,30 +54,20 @@ body {
     height: 5vh;
     width: 100%;
 }
-
+/* MAIN STYLE */
 .content {
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 60%;
     margin: auto;
-    /* margin: 10rem; */
 }
 .description {
     display: flex;
     flex-wrap: wrap;
 }
-
-/* .title-text {
-    display: inline-block;
-    flex-wrap: wrap;
-    font-size: 2rem;
-    padding-left: 2vw;
-} */
-
 .title-text {
     display: flex;
     flex-direction: column;
@@ -86,16 +75,12 @@ body {
     justify-content: center;
     padding: 2rem 0;
 }
-
-
- 
 .were {
     font-size: 4rem;
     font-weight: 300;
     letter-spacing: 1.1rem;
     color: var(--desaturated-red);
 }
-
 .coming {
     font-size: 4rem;
     letter-spacing: 1rem;
@@ -104,7 +89,6 @@ body {
     font-size: 4rem;
     letter-spacing: 1.1rem;
 }
-
 .promo {
     display: flex;
     flex-wrap: wrap;
@@ -118,7 +102,6 @@ body {
     width: 100%;
     padding-left: 2rem;
 }
-
 .contact {
     display: inline-block;
     position: relative;
@@ -127,7 +110,6 @@ body {
     width: 25rem;
     text-align: center;
     color: var(--grayish-blue);
-    /* margin-top: 2vh; */
 }
 .email {
     display: inline-block;
@@ -150,8 +132,6 @@ body {
     background-position: center;
     border: var(--grayish-blue);
     border-radius: 2rem;
-    /* -webkit-box-shadow: 0px 2px 29px 8px rgba(248,191,191,0.49); 
-    box-shadow: 0px 2px 29px 8px rgba(248,191,191,0.49); */
     -webkit-box-shadow: -11px 9px 9px -7px rgba(0,0,0,0.32); 
     box-shadow: -11px 9px 29px -7px rgba(0,0,0,0.32);
     transition: all 0.5s ease;
@@ -178,7 +158,7 @@ input[type="text"]:focus {
 }
 
 /* MEDIA QUERIES */
-/* @media (max-width: 500px), screen and (orientation: portrait) { */
+
 @media screen and (max-width: 800px) {
 
     .body {
@@ -199,7 +179,6 @@ input[type="text"]:focus {
         background-repeat: no-repeat;
         background-size: 100%;
         z-index: 1;
-        /* padding: 0 50px; */
     }
     .content {
         grid-column: 1;
@@ -207,65 +186,38 @@ input[type="text"]:focus {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
-        /* flex-wrap: wrap; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
         height: 100vh;
-        /* width: 60%;
-        margin: auto; */
-        /* margin: 10rem; */
     }
-
     .description {
         display: flex;
     }
-    /* .description {
-        
-        grid-column: 1;
-        grid-row: 3;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        padding-top: 0;
-        padding-left: 8vw;
-        padding-right: 8vw;
-        width: 100vw;
-    } */
-
     .title-text {
         display: flex;
         align-items: center;
         justify-content: center;
         margin: auto;
     }
-
     .were {
         font-size: 10vw;
         font-weight: 300;
         letter-spacing: 1.1rem;
         color: var(--desaturated-red);
     }
-
     .coming,
     .soon {
         font-size: 10vw;
         line-height: 3rem;
         letter-spacing: 1.2rem;
     }
-
     .promo {
         display: flex;
         justify-content: center;
-        /* flex-wrap: wrap; */
         align-items: center;
         color: var(--desaturated-red);
         line-height: 1.7rem;
         padding: 0;
         margin: auto;
     }
-
-
     .hero {
         background-image: url(images/hero-mobile.jpg);
         background-repeat: no-repeat;
@@ -280,16 +232,12 @@ input[type="text"]:focus {
         height: 7vh;
     }
     .logo {
-        
         background-image: url(images/logo.svg);
         background-repeat: no-repeat;
         background-size: contain;
         height: 3vh;
     }
-
     .contact {
-        /* display: inline-block;
-        position: relative; */
         border-radius: 2rem;
         border: 1px solid hsl(0, 80%, 86%);
         text-align: center;
@@ -300,20 +248,17 @@ input[type="text"]:focus {
         max-width: 80vw;
     }
     .email {
-        /* display: inline-block;
         position: relative; */
         height: 2.9rem;
         border: var(--grayish-blue);
         font-size: 1.1rem;
         width: 50vw;
         padding: 0;
-        
     }
     .email::placeholder {
         color: var(--desaturated-red);
         font-family: 'Josefin Sans';
         text-align: start;
-
     }
     .btn {
         position: absolute;
@@ -324,8 +269,6 @@ input[type="text"]:focus {
         background-position: center;
         border: var(--grayish-blue);
         border-radius: 2rem;
-        /* -webkit-box-shadow: 0px 2px 29px 8px rgba(248,191,191,0.49); 
-        box-shadow: 0px 2px 29px 8px rgba(248,191,191,0.49); */
         -webkit-box-shadow: -11px 9px 9px -7px rgba(0,0,0,0.32); 
         box-shadow: -11px 9px 29px -7px rgba(0,0,0,0.32);
         transition: all 0.5s ease;
@@ -350,14 +293,12 @@ input[type="text"]:focus {
         padding-top: 4rem;
         padding-bottom: 0;
     }
-    
     .were {
         font-size: 2rem;
         font-weight: 300;
         letter-spacing: 1.1rem;
         color: var(--desaturated-red);
     }
-    
     .coming {
         font-size: 2rem;
         letter-spacing: 1rem;
@@ -366,7 +307,6 @@ input[type="text"]:focus {
         font-size: 2rem;
         letter-spacing: 1.1rem;
     }
-
     .promo {
         display: flex;
         flex-direction: column;
@@ -375,7 +315,6 @@ input[type="text"]:focus {
         padding-top: 1rem;
         padding-bottom: 0;
     }
-
     .logo-container {
         grid-row: 1;
         grid-column: 1;
@@ -383,13 +322,9 @@ input[type="text"]:focus {
         margin: 5vh 0;
     }
     .logo {
-        
         background-image: url(images/logo.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        /* height: 6vh; */
         padding: 5vh;
     }
-
-    
 }
